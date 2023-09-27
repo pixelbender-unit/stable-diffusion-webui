@@ -1,7 +1,7 @@
 # disable the restart dialogue and install several packages
 sudo sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
 sudo apt-get update
-sudo apt install wget git python3 python3-venv build-essential net-tools awscli -y
+sudo apt install wget git python3.10 python3-venv build-essential net-tools awscli -y
 
 # install CUDA (from https://developer.nvidia.com/cuda-downloads)
 # wget https://developer.download.nvidia.com/compute/cuda/12.0.0/local_installers/cuda_12.0.0_525.60.13_linux.run
